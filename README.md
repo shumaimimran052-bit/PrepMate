@@ -74,3 +74,10 @@ Expand question bank
 Add more motivational micro-messages
 
 Debug schedule rendering (currently an error occurs before showing results; focus for next iteration)
+
+## Demo
+Demo: **[Link to deployed app when ready]**
+
+## Project Video
+Explainer video: **[Google Drive link when available]**
+
