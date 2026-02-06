@@ -75,6 +75,9 @@ Add more motivational micro-messages
 
 Debug schedule rendering (currently an error occurs before showing results; focus for next iteration)
 
+## Evaluation
+Evaluation dataset and results are available in `evaluation_dataset_and_results.docx`.
+
 ## Demo
 Demo: **[Link to deployed app when ready]**
 
