@@ -1,0 +1,149 @@
+Build a fully working AI-powered study assistant web app called PrepMate for university-level students.
+The app must have clear page navigation, saved state, and deterministic actions so users always move forward correctly.
+
+🔁 GLOBAL APP RULES (IMPORTANT)
+
+Student data must be saved once and reused across pages
+Each button must trigger a specific action + page navigation
+The quiz must always progress → results → schedule
+Do NOT leave any actions as placeholders
+Do NOT rely on user typing commands to navigate
+
+1️⃣ Student Info Page (START PAGE)
+Create the first screen with a form containing:
+Student Name (text)
+Subject (text or dropdown)
+Exam Date (date picker)
+Daily Study Time (dropdown: 30 / 45 / 60 minutes)
+
+Button:
+“Save & Start Quiz”
+Button Action (MANDATORY):
+Save all form data to app state
+Initialize quiz state:
+currentQuestion = 1
+totalQuestions = 5
+weakTopics = empty list
+correctAnswers = 0
+
+Navigate automatically to Quiz Page
+
+⚠️ The app must NOT remain on this page after clicking the button.
+
+2️⃣ Quiz Page (AI-Driven)
+Quiz Rules:
+Ask exactly 5 university-level questions
+Show one question at a time
+Display progress indicator: “Question X of 5”
+Subject Logic:
+Math → Calculus, Linear Algebra, Probability, Discrete Math
+IT / Computer Science → Algorithms, Data Structures, Logic, Databases
+
+After Each Answer:
+AI evaluates the answer
+
+Show:
+Correct / Incorrect
+Short explanation
+
+If incorrect:
+Add topic to weakTopics
+Increment currentQuestion
+
+Navigation Logic:
+If currentQuestion < 5 → load next question
+If currentQuestion == 5 → automatically navigate to Results Page
+
+Buttons:
+Next Question (only until Q5)
+Restart Quiz
+Resets quiz state
+Keeps student info
+Returns to Question 1
+
+3️⃣ Results Page (AUTO-GENERATED)
+
+This page must appear automatically after Question 5.
+Display:
+Total correct answers (out of 5)
+List of weak topics (if none, show “No major weak areas detected”)
+Short AI feedback summary
+Encouraging message
+
+Button:
+“Generate Study Schedule”
+
+Button Action:
+Navigate to Study Schedule Page
+
+4️⃣ Study Schedule Page (TABLE VIEW)
+
+Generate a structured study schedule using:
+Exam date
+Daily study time
+Weak topics
+
+Table Columns:
+Date
+Subject
+Topic(s)
+Study Duration
+Days Remaining Until Exam
+
+Rules:
+Prioritize weak topics more often
+Lighter review for strong topics
+Do not overload any single day
+Adjust intensity if exam is close
+
+Buttons:
+Regenerate Schedule
+Restart Quiz
+View Study Streak
+
+5️⃣ Study Streak Page (NEW)
+
+Create a separate page showing:
+Current streak (number of consecutive study days)
+Last study date
+Motivational message
+
+Logic:
+Increase streak when:
+Quiz is completed OR
+Schedule is generated
+
+If no activity for a day:
+Reset streak
+Show supportive message
+
+Buttons:
+
+Continue Studying → Quiz Page
+View Schedule → Schedule Page
+
+🎨 UI / DESIGN REQUIREMENTS
+
+Modern, student-friendly design
+Card-based layout
+Soft colors, clean typography
+Clear buttons and page transitions
+Mobile responsive
+
+🧠 AI BEHAVIOR RULES
+
+Supportive, calm, encouraging tone
+Clear and concise explanations
+No technical AI terms
+Focus on learning, not judgment
+Emphasize consistency and improvement
+
+🎯 FINAL REQUIREMENT (CRITICAL)
+
+The app must:
+Always move forward automatically
+Never get stuck after form submission
+Never skip results or schedule
+Have zero placeholder actions
+
+This app should feel like a real, production-ready university study tool, not a prototype.
