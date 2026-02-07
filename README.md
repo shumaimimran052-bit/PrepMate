@@ -77,10 +77,15 @@ Debug schedule rendering (currently an error occurs before showing results; focu
 
 ## Evaluation
 Evaluation dataset and results are available in `evaluation_dataset_and_results.docx`.
+[prepmate_evalution.xlsx](https://github.com/user-attachments/files/25142738/prepmate_evalution.xlsx)
+
 
 ## Demo
-Demo: **[Link to deployed app when ready]**
+Demo: https://prepmate-2026.lovable.app
+The Airia agent demo link is currently pending.  
+For now, I am providing the private link:https://community.airia.ai/import-agent/lDX65yVQfBOKjIr1SjqJVGwEYoBWRaxakqjPoqdla8L
+
 
 ## Project Video
-Explainer video: **[Google Drive link when available]**
+Explainer video: https://drive.google.com/drive/folders/1qZ8HIJfN2PSAf8bmfsNqm936AuAqDpAe
 
